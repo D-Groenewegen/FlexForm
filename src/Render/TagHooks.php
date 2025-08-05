@@ -754,7 +754,7 @@ class TagHooks {
 		switch ( $fieldType ) {
 			case 'text':
 				if ( isset( $args['mwidentifier'] ) && $args['mwidentifier'] === 'datepicker' ) {
-					$parser->getOutput()->addModules( 'ext.wsForm.datePicker.scripts' );
+					$parser->getOutput()->addModules( [ 'ext.wsForm.datePicker.scripts' ] );
 					$parser->getOutput()->addModuleStyles( 'ext.wsForm.datePicker.styles' );
 				}
 				$preparedArguments = Validate::doSimpleParameters(
